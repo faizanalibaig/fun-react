@@ -7,7 +7,7 @@ function App() {
      overflow-x-hidden">
       <div className="">
          <h1 className="text-9xl font-kodeMono">'Hello,React'</h1>
-      </div>
+      </div> 
     </div>
   )
 }
