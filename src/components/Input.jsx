@@ -1,8 +1,11 @@
 import React from 'react';
 import { InputManager } from '../hooks/InputManager';
+import information from '../json/data.json';
 
-const Input = () => {
+const InputHook = () => {
   const data = InputManager('john smith');
+
+  console.log(information);
 
   return (
     <section className="h-screen w-screen bg-slate-300 flex justify-center items-center">
@@ -22,4 +25,4 @@ const Input = () => {
   );
 };
 
-export default Input;
+export default InputHook;
