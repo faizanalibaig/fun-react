@@ -5,7 +5,7 @@ import information from '../json/data.json';
 const InputHook = () => {
   const data = InputManager('john smith');
 
-  console.log(information);
+  console.log(data);
 
   return (
     <section className="h-screen w-screen bg-slate-300 flex justify-center items-center">
