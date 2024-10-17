@@ -1,18 +1,12 @@
-import { useRef, useEffect } from 'react';
+import { useDataHook } from './hooks/useDataHook';
 
 function App() {
-  const ref = useRef(null);
-
-  useEffect(() => {
-    // Log the actual DOM element after the component has rendered
-    console.log(ref.current); // This will log the <h1> element
-  }, []); // Empty dependency array ensures it runs only once after the component mounts
+  const keyToSearch = 'address'; // Specify the key you want to search for
+  useDataHook(keyToSearch); // Call the hook with the specified key
 
   return (
     <section>
-      <h1 ref={ref}>Hello, useRef</h1>
-      {/* <Network /> */}
-      {/* <InputHook /> */}
+      <h1>Check the console for output!</h1>
     </section>
   );
 }
